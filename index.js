@@ -75,8 +75,8 @@ app.get('/attendance', (req, res) => {
 
 // Endpoint to download attendance data for multiple dates as CSV
 app.get('/download', (req, res) => {
-  const startDate = new Date('2023-06-01');
-  const endDate = new Date('2023-06-30');
+  const startDate = new Date('2024-03-21');
+  const endDate = new Date('2024-06-30');
 
   // Find the attendance records within the date range
   AttendanceModel.find({ date: { $gte: startDate, $lte: endDate } })
